@@ -23,5 +23,6 @@ function transportationOptions(weather,time,hungery) {
   console.log(transportationOptions('sunny',28,'yes'))
   console.log(transportationOptions('sunny', 45, 'no'))
   console.log(transportationOptions('cloudy', 28, 'yes'))
-  console.log(transportationOptions('cloudy', 12, 'no'))
-  console.log(transportationOptions('rainy', 40, 'yes'))
+  console.log(transportationOptions('cloudy', 45,'yes'))
+  console.log(transportationOptions('rainy', 40))
+
