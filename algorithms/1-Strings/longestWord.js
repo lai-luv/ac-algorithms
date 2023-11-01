@@ -16,11 +16,17 @@ function findLongestWord(str) {
   var longestWordLength = 0;
   // this is a for loop that loops thru the string to find the longest word in the string giving 
   for (var i = 0; i < words.length; i++) {
+    // // Check if the length of the current word is greater than the current longestWordLength
     if (words[i].length > longestWordLength) {
+      // // If the current word is longer, update the longestWordLength variable with the length of the current word
       longestWordLength = words[i].length;
     }
   }
-  
+  //  // Return the length of the longest word found in the input string
   return longestWordLength;
 }
 
+// Example usage of the function
+var inputString = "Hello world, this is an example sentence .";
+// Call the function with the input string and log the result to the console
+console.log("Length of the longest word: " + findLongestWord(inputString)); // Output: 8 (because "sentence" is the longest word)
