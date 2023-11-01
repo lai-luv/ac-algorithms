@@ -18,8 +18,10 @@ Steps
  */
 
 function validateUserCredentials(users, inputUsername, inputPassword) {
-    
+    return users.some(user => user.username === inputUsername && user.password === inputPassword);
 }
+
+
 
 // Example usage
 const registeredUsers = [
