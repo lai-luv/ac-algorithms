@@ -20,7 +20,21 @@ Steps:
  */
 
 function hasDuplicates(arr) {
-   
+    // creating obj
+    var numObj = {}
+    // iterating thru the array with a for loop
+    for (let i = 0; i < arr.length; i++) {
+        // checking if the number already exists
+        if (numObj[arr[i]] !== undefined) {
+            // if number found as duplicates  re turn true 
+            return true;
+            // number not found add to obj
+        } else {
+            numObj[arr[i]] = true
+        }
+    }
+    // after looking thru the whole array if no dup's found return false
+    return false;
 }
 
 // Example usage
