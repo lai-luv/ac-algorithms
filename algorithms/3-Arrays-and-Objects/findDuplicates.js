@@ -21,7 +21,7 @@ Steps:
 
 function hasDuplicates(arr) {
     // creating obj
-    var numObj = {}
+    let numObj = {}
     // iterating thru the array with a for loop
     for (let i = 0; i < arr.length; i++) {
         // checking if the number already exists
